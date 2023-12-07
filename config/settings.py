@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'corsheaders',
 
     'users',
+    'converter',
 ]
 
 MIDDLEWARE = [
@@ -234,3 +235,5 @@ CELERY_TIMEZONE = 'Australia/Tasmania'
 CELERY_TASK_TRACK_STARTED = True
 CELERY_TASK_TIME_LIMIT = 30 * 60
 CELERY_TASK_ALWAYS_EAGER = True
+
+API_KEY = os.getenv('API_KEY')
